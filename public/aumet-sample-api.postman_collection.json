@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "0e39b16e-a071-4329-85ce-1b4787d423e7",
+		"name": "aumet-sample-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "reservatation api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/?user_id=1&package_id=2&booking_type=Car&booking_id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "package_id",
+							"value": "2",
+							"description": "id in packages table"
+						},
+						{
+							"key": "booking_type",
+							"value": "Car",
+							"description": "\"Car\" or \"Minihouse\""
+						},
+						{
+							"key": "booking_id",
+							"value": "1",
+							"description": "id in cars table or id in mini_houses table"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
