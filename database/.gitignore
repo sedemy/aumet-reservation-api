@@ -1,1 +1,2 @@
 *.sqlite*
+!reservation_db.sqlite
